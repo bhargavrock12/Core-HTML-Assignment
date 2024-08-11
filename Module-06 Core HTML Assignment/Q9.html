@@ -1,0 +1,182 @@
+<!-- Create an ordered list of the most common text formatting tags in HTML. Within each list item, use an 
+unordered list to list the specific use cases and best practices for that tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting Tags</title>
+</head>
+<body style="background-color: #7b2cbf;">
+    <hr>
+    <h1 style="text-align: center; background-color: #240046; color: #a054e2; font-size: xxx-large;">Text Formatting Tags</h1>
+    <hr>
+    <ol style="background-color: #c77dff; color: #240046;">
+        <br>
+        <li>
+            <h2>&lt;b&gt; (Bold)</h2>
+            <ul>
+                <li><b>Use Case:</b> Makes text bold without adding any extra importance.
+                </li>
+                <li><b>Best Practice:</b> Use &lt;strong&gt; for indicating importance or emphasis, as it is more semantically meaningful.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;strong&gt; (Strong Emphasis)</h2>
+            <ul>
+                <li><b>Use Case:</b> Highlights text that is of strong importance or urgency.</li>
+                <li><b>Best Practice:</b> Preferred over &lt;b&gt; for text that needs emphasis, as it is both visually bold and semantically meaningful.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;i&gt; (Italic)</h2>
+            <ul>
+                <li><b>Use Case:</b> Italicizes text without adding any extra emphasis.</li>
+                <li><b>Best Practice:</b> Use for stylistic purposes, such as denoting a book title or foreign phrase. Use &lt;em&gt; when indicating emphasis.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;em&gt; (Emphasis)</h2>
+            <ul>
+                <li><b>Use Case:</b> Emphasizes text, typically by italicizing, and also provides semantic meaning.</li>
+                <li><b>Best Practice:</b> Preferred over &lt;i&gt; for emphasizing words, as it conveys meaning to screen readers.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;u&gt; (Underline)</h2>
+            <ul>
+                <li><b>Use Case:</b> Underlines text.</li>
+                <li><b>Best Practice:</b> Avoid using &lt;u&gt; for underlining, as it can be confused with links. Use CSS for custom styling instead.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;mark&gt; (Highlight)</h2>
+            <ul>
+                <li><b>Use Case:</b> Highlights or marks text with a yellow background, indicating that it's relevant or important.</li>
+                <li><b>Best Practice:</b> Use sparingly for important information that needs to stand out, such as search results.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;small&gt; (Small Text)</h2>
+            <ul>
+                <li><b>Use Case:</b> Reduces the size of the text.</li>
+                <li><b>Best Practice:</b> Use for disclaimers, footnotes, or secondary information. Avoid overusing as it can reduce readability.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;sub&gt; (Subscript)</h2>
+            <ul>
+                <li><b>Use Case:</b> Displays text as subscript, often used in chemical formulas or mathematical expressions.</li>
+                <li><b>Best Practice:</b> Use for subscripted text in formulas or equations, such as H&lt;sub&gt;2&lt;/sub&gt;O, which gives H<sub>2</sub>O.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;sup&gt; (Superscript)</h2>
+            <ul>
+                <li><b>Use Case:</b> Displays text as superscript, often used in footnotes or mathematical expressions.</li>
+                <li><b>Best Practice:</b> Use for superscripted text, such as exponents (e.g., x&lt;sup&gt;2&lt;/sup&gt; ,which gives x<sup>2</sup>).</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;ins&gt; (Inserted Text)</h2>
+            <ul>
+                <li><b>Use Case:</b> Indicates inserted text, typically underlined by default.</li>
+                <li><b>Best Practice:</b> Use for showing content additions, such as in track changes or document edits.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;del&gt; (Deleted Text)</h2>
+            <ul>
+                <li><b>Use Case:</b> Indicates text that has been deleted, typically strikethrough by default.</li>
+                <li><b>Best Practice:</b> Use for showing content removals or corrections.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;abbr&gt; (abbreviation)</h2>
+            <ul>
+                <li><b>Use Case:</b> Defines an abbreviation or acronym, which provides the full term on hover.</li>
+                <li><b>Best Practice:</b> Always provide a 'title' attribute to explain the abbreviation. For example:&lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt; ,which gives <abbr title="Hypertext Markup Language">HTML</abbr>.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;code&gt; (inline code)</h2>
+            <ul>
+                <li><b>Use Case:</b> Displays text in a monospaced font, typically for code snippets.</li>
+                <li><b>Best Practice:</b> Use for inline code examples within a block of text. Combine with &lt;pre&gt; for block-level code.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;pre&gt; (Preformatted Text)</h2>
+            <ul>
+                <li><b>Use Case:</b> Preserves whitespace and line breaks, displaying text exactly as written.</li>
+                <li><b>Best Practice:</b> Use for multi-line code snippets or preformatted text, such as ASCII art.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;blockquote&gt; (Block Quotation)</h2>
+            <ul>
+                <li><b>Use Case:</b> Indicates a long quotation, usually from another source.</li>
+                <li><b>Best Practice:</b> Use for quoting long passages. Use &lt;q&gt; for shorter, inline quotes.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;q&gt; (Inline Quotation)</h2>
+            <ul>
+                <li><b>Use Case:</b> Represents a short, inline quotation.</li>
+                <li><b>Best Practice:</b> Use for shorter quotes within a paragraph. It automatically adds quotation marks. <br> eg., Use &lt;q&gt;&lt;/q&gt;, it gives <q>When you share your secrets with wind, you can't blame wind for sharing it with tree</q></li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;cite&gt; (Citation)</h2>
+            <ul>
+                <li><b>Use Case:</b> Represents a reference to a creative work, such as a book, article, or website.</li>
+                <li><b>Best Practice:</b> Use for citing the title of a work, not for quoting content. <br> eg., I recently read <cite>To Kill a Mockingbird</cite> by Harper Lee.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;kbd&gt; (Keyboard Input)</h2>
+            <ul>
+                <li><b>Use Case:</b> Displays text as keyboard input, usually in a monospaced font.</li>
+                <li><b>Best Practice:</b> Use for representing keyboard commands, such as &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;,gives <kbd>Ctrl</kbd> + <kbd>C</kbd>.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;var&gt; (Variable)</h2>
+            <ul>
+                <li><b>Use Case:</b> Represents a variable in a mathematical expression or programming context.</li>
+                <li><b>Best Practice:</b> Use when indicating variables within code or equations.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;s&gt; (Strikethrough)</h2>
+            <ul>
+                <li><b>Use Case:</b> Strikes through text, typically to indicate something that is no longer relevant or has been changed.</li>
+                <li><b>Best Practice:</b> Use sparingly; &lt;del&gt; may be more appropriate for indicating deletions.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;bdi&gt;  (Bi-directional Isolation)</h2>
+            <ul>
+                <li><b>Use Case:</b> Isolates a span of text that may be formatted in a different direction (e.g., right-to-left languages).</li>
+                <li><b>Best Practice:</b> Use when embedding text that could disrupt the text direction of the surrounding content.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;bdo&gt; (Bi-directional Override)</h2>
+            <ul>
+                <li><b>Use Case:</b> Overrides the current text direction to display in a different direction.</li>
+                <li><b>Best Practice:</b> Use for cases where text direction must be explicitly set, such as for RTL languages in a LTR context.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>&lt;time&gt; (Time)</h2>
+            <ul>
+                <li><b>Use Case:</b> Represents a specific time or date.</li>
+                <li><b>Best Practice:</b> Use with a datetime attribute for machine-readable formats. For example: <time datetime="2024-08-11">August 11, 2024</time>.</li>
+            </ul>
+        </li>
+        <br>
+    </ol>
+</body>
+</html>
